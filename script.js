@@ -166,3 +166,60 @@ function validUpperCasse(val) {
     }
 
 }
+
+/* Here we can create the password with chosen values, if have Lower and Upper case values, Special characters and Numeric!*/
+function createPassword(password) {
+
+
+
+    let myArray = password.split(" ");
+    let letterupper = "abcdefghijklmnopqrstuvxy";
+    let letterlower = "ABCDEFGHIJKLMNOPQRSTUVWXY";
+    let numeric = "1234567890";
+    let special = "!@##$%&'()*+,-./'";
+    let newPassword = "";
+    let passwordDone = "";
+    for (let i = 0; i < myArray.length; i++) {
+        if (myArray[i] == "validlower") {
+
+            newPassword = newPassword.concat('', letterupper);
+
+        } else {
+
+
+        }
+        if (myArray[i] == "validupper") {
+
+            newPassword = newPassword.concat('', letterlower);
+
+        } else {
+
+
+        }
+        if (myArray[i] == "validnumeric") {
+
+            newPassword = newPassword.concat('', numeric);
+
+        } else {
+
+
+        }
+        if (myArray[i] == "validspecial") {
+
+            newPassword = newPassword.concat('', special);
+
+        } else {
+
+
+        }
+
+
+    }
+
+
+    for (var i = 0; i < myArray[0]; i++) {
+        var randomPassword = Math.floor(Math.random() * newPassword.length);
+        passwordDone += newPassword.substring(randomPassword, randomPassword + 1);
+    }
+    writePassword(passwordDone)
+}
