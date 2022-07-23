@@ -223,3 +223,12 @@ function createPassword(password) {
     }
     writePassword(passwordDone)
 }
+
+// Write password to the #password input
+function writePassword(passwordDone) {
+
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = passwordDone;
+    document.getElementById("password").innerHTML = passwordDone;
+}
