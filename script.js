@@ -22,13 +22,13 @@ function validNumber(val) {
 /* Hee is the second step in the algorithm where we can imput all information and check if is correct or not!*/
 function nextQuestion(val) {
 
-    let lowercase = prompt("Do you want to include lowercase letter? Y/N");
+    let lowercase = prompt("Do you want to include Lower Case letter? Y/N");
     let validlower = validLowerCasse(lowercase);
-    let uppercase = prompt("Do you want to include uppercase letter? Y/N");
+    let uppercase = prompt("Do you want to include Upper Case letter? Y/N");
     let validupper = validUpperCasse(uppercase)
-    let numeric = prompt("Do you want to include numeric letter?");
+    let numeric = prompt("Do you want to include Numeric Letter?");
     let validnumeric = validNumeric(numeric)
-    let special = prompt("Do you want to include special characters letter?");
+    let special = prompt("Do you want to include special characters Letter?");
     let validspecial = validSpecial(special)
 
 
