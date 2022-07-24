@@ -1,4 +1,4 @@
-# Security Password Generator
+# Secure Password Generator
 
 ### Project created by:
 - Trevizan, José Henrique
